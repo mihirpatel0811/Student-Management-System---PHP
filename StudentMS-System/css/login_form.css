@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?famaily=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --text-color: #fff;
+    --second-bg-color: #323946;
+    --main-color: #0ef;
+    --font-color: #000;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 3%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+h1 {
+    margin: 0%;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.main input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.main button[type="submit"] {
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: blueviolet;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.main button[type="submit"]:hover {
+    cursor: pointer;
+    background: var(--main-color);
+    color: #000;
+}
+
+.main a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.main a:hover {
+    color: var(--main-color);
+}
+
+.main {
+    width: 320px;
+    height: 420px;
+    background: var(--second-bg-color);
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+}
+
+.main p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.main p a {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.main label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.body {
+    background:linear-gradient(rgba(0, 242, 255, 0.6), rgba(0, 26, 255, 0.5),rgba(149, 0, 255, 0.3)), url('../images/wallpaper.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body img {
+    width: 35vw;
+}
